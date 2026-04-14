@@ -1,3 +1,4 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
+gem "jekyll", "~> 4.3"
+gem "webrick"  # Ruby 3.0+에서 jekyll serve에 필요
