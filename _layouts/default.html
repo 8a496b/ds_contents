@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- Plotly: blocking load so inline scripts in content can call Plotly immediately -->
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -33,8 +36,6 @@
     </div>
   </footer>
 
-  <!-- Plotly -->
-  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
   <!-- highlight.js -->
   <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
   <script>hljs.highlightAll();</script>
