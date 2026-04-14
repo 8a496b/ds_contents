@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="chapter">
+  {% if page.description %}
+  <p class="chapter-desc">{{ page.description }}</p>
+  {% endif %}
+  {{ content }}
+
+  <hr>
+  <p><a href="{{ '/' | relative_url }}">← 목차로 돌아가기</a></p>
+</article>

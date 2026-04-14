@@ -1,0 +1,24 @@
+title: DS Contents
+description: Data Science 학습 자료
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: null
+highlighter: rouge
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+collections:
+  chapters:
+    output: true
+    permalink: /chapters/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: chapters
+    values:
+      layout: chapter
